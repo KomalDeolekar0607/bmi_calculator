@@ -1,0 +1,123 @@
+/* Calorie Tracker Styles */
+.calorie-tracker {
+  background-color: #242424;
+  border-radius: 8px; /* Rounded corners */
+  padding: 2em; /* Padding around the component */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-top: 2rem; /* Space above the component */
+}
+
+.calorie-tracker h1 {
+  font-size: 2.5rem; /* Larger font for the main title */
+  color: white; /* Darker text for readability */
+}
+
+.calorie-tracker h2 {
+  font-size: 1.8rem; /* Slightly smaller than h1 */
+  color: white; /* Darker gray for subheadings */
+  margin-top: 1.5rem; /* Space above subheadings */
+}
+
+.calorie-tracker form {
+  margin-bottom: 2rem; /* Space below the form */
+  background-color: #242424;
+
+}
+
+.calorie-tracker label {
+  display: block; /* Makes labels occupy full width */
+  margin: 0.5rem 0; /* Space above and below labels */
+  font-weight: bold; /* Bold labels for emphasis */
+}
+
+.calorie-tracker input[type="text"],
+.calorie-tracker input[type="number"] {
+  width: calc(100% - 20px); /* Full width minus padding */
+  padding: 0.5em; /* Padding inside input */
+  margin-top: 0.5rem; /* Space above input */
+  border: 1px solid #ccc; /* Light border for inputs */
+  border-radius: 4px; /* Rounded corners for inputs */
+  font-size: 1rem; /* Consistent font size */
+  background-color: #242424;
+  color:white;
+
+}
+
+.calorie-tracker button {
+  background-color: orangered; /* Green button */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 0.75em 1.5em; /* Padding inside button */
+  font-size: 1rem; /* Consistent font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 300ms; /* Smooth background change */
+}
+
+.calorie-tracker button:hover {
+  background-color: orangered; /* Darker green on hover */
+}
+
+.calorie-tracker ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  color: white; /* Darker gray for subheadings */
+
+}
+
+.calorie-tracker li {
+  padding: 0.5em 0; /* Padding for each log item */
+  border-bottom: 1px solid #ddd; /* Light bottom border */
+  color: White; /* Darker gray for subheadings */
+
+}
+
+.calorie-tracker p {
+  color: orangered; /* Darker text for readability */
+}
+
+.suggested-meal {
+  background-color: #242424;
+  border-radius: 8px; /* Rounded corners */
+  padding: 2rem; /* Padding around the component */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-top: 2rem; /* Space above the component */
+}
+
+.suggested-meal h1 {
+  font-size: 2rem; /* Main heading size */
+  color: orangered; /* Dark text for readability */
+}
+
+.suggested-meal h2 {
+  font-size: 1.5rem; /* Subheading size */
+  color: white; /* Darker gray for subheadings */
+  margin-top: 1.5rem; /* Space above subheadings */
+}
+
+.suggested-meal label {
+  display: block; /* Make label occupy full width */
+  margin: 1rem 0; /* Space above and below labels */
+  font-weight: bold; /* Bold labels */
+}
+
+.suggested-meal select {
+  width: 100%; /* Full width */
+  padding: 0.5em; /* Padding inside select */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  background-color: #242424;
+  color: white;
+
+}
+
+.suggested-meal ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+}
+
+.suggested-meal li {
+  padding: 0.5em 0; /* Padding for each meal item */
+  border-bottom: 1px solid #ddd; /* Light bottom border */
+}
