@@ -7,6 +7,7 @@ import Breadcrumb from './components/Breadcrumb';
 import History from './components/History';
 import Meals from './components/Meals';
 import BMRCalculator from './components/BMRCalculator';
+import CalorieTracker from './components/CalorieTracker';
 import { BMICalculatorProvider } from './components/BMICalculatorContext';
 
 
@@ -42,7 +43,7 @@ const App = () => {
                     />
                     <Route 
                         path="/calorieTracker" 
-                        element={<Meals />} 
+                        element={<CalorieTracker />} 
                     />
                    
                 </Routes>
