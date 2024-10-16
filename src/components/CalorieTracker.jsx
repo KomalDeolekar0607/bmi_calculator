@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../assets/calorie.css';
 
 const CalorieTracker = () => {
   const [calorieLimit, setCalorieLimit] = useState(0);
