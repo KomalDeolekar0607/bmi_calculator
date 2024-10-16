@@ -1,9 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect ,useContext } from 'react';
 import BMIPieChart from './BMIPieChart';
+import { Link } from 'react-router-dom'; 
 import BMICategoryBarChart from './BMIBarChart';
 import '../assets/styles.css';
+import { BMICalculatorContext } from './BMICalculatorContext';
 
 const BMICalculator = () => {
+    const { calculateBMIInContext } = useContext(BMICalculatorContext);
+
     const [bmiData, setBmiData] = useState(null);
     const [showCharts, setShowCharts] = useState(false);
     const [bmiHistory, setBmiHistory] = useState(() => {
@@ -20,6 +24,9 @@ const BMICalculator = () => {
         // Calculate BMI
         const heightM = heightCm / 100;
         const bmiValue = weightKg / (heightM * heightM);
+
+        // Calculate BMI using context
+        calculateBMIInContext(weightKg, heightCm);
         
         // Determine weight status based on BMI
         let weightStatus;
@@ -124,6 +131,13 @@ const BMICalculator = () => {
                 <div className="charts-section" style={{ display: 'flex', justifyContent: 'space-around', marginTop: '20px' }}>
                     <BMIPieChart bmiValue={bmiData.bmiValue} weightStatus={bmiData.weightStatus} />
                     <BMICategoryBarChart bmiValue={bmiData.bmiValue} weightStatus={bmiData.weightStatus} />
+                </div>
+            )}
+
+             {/* Link to Meals Page */}
+            {bmiData && (
+                <div style={{ marginTop: '20px' }}>
+                    <Link to="/meals">View Meal Suggestions</Link>
                 </div>
             )}
         </section>

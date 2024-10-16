@@ -1,0 +1,101 @@
+/* General container for the meal plan */
+.meal-plan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color:#151515;  /* #1a1a1a*/
+  color: #f1f1f1;
+  border-radius: 10px;
+  font-family: 'Outfit', sans-serif; /* Updated font family */
+  margin-bottom: 40px;
+}
+
+/* Styling for the main heading */
+.meal-plan-heading {
+  font-size: 36px ; /*2.5rem*/
+  color: #f36100; /* Updated orange shade for the main heading */
+  margin-bottom: 1rem;
+}
+
+/* Category heading */
+.meal-category {
+  font-size: 1.4rem;
+  color: #f1f1f1; /* Updated orange shade for category */
+  margin-bottom: 2rem;
+  font-weight:normal;
+}
+
+/* Section for meals and "not to eat" list */
+.meals-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+  background-color: rgb(44, 41, 41);
+}
+
+.eat, .noteat{
+  background-color: #1a1a1a;
+  padding: 20px;
+  /* border-radius: 10px; */
+}
+
+/* Individual meal list sections */
+.meals-list {
+  flex: 1;
+  padding: 1rem;
+}
+
+/* List styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #333; /* Dark background for list items */
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  color: #f1f1f1;
+  text-align: left;
+}
+
+/* Headings inside each meal list */
+.meals-list h4 {
+  font-size: 1.5rem;
+  color: #f36100; /* Updated orange shade for list headings */
+  margin-bottom: 1rem;
+}
+
+/* No BMI message */
+.no-bmi-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.no-bmi-container p {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+}
+
+/* Link container for "Calculate BMI" */
+.link-container a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #f36100; /* Updated orange shade */
+  color: #1a1a1a;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-family: 'Outfit', sans-serif; /* Updated font family */
+}
+
+.link-container a:hover {
+  background-color: #d85600; /* Slightly darker hover effect for the new orange */
+}

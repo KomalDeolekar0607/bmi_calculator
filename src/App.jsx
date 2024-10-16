@@ -5,26 +5,53 @@ import Footer from './components/Footer';
 import BMICalculator from './components/BMICalculator';
 import Breadcrumb from './components/Breadcrumb';
 import History from './components/History';
+import Meals from './components/Meals';
+import BMRCalculator from './components/BMRCalculator';
+import { BMICalculatorProvider } from './components/BMICalculatorContext';
+
 
 const App = () => {
     return (
+        
         <Router>
-            <div>
+            <BMICalculatorProvider>
+              <div>
                 <Header />
-                <Breadcrumb />
+                {/* <Breadcrumb /> */}
                 <Routes>
                     <Route 
                         path="/" 
+                        element={<Breadcrumb />} 
+                    />
+                
+                    <Route 
+                        path="/bmi" 
                         element={<BMICalculator />} 
                     />
                     <Route 
                         path="/history" 
                         element={<History />} 
                     />
+                    <Route 
+                        path="/suggestedMeals" 
+                        element={<Meals />} 
+                    />
+                    <Route 
+                        path="/bmr" 
+                        element={<BMRCalculator />} 
+                    />
+                    <Route 
+                        path="/calorieTracker" 
+                        element={<Meals />} 
+                    />
+                   
                 </Routes>
+                {/* <Meals /> */}
                 <Footer />
             </div>
+            </BMICalculatorProvider>
         </Router>
+        
     );
 };
 
